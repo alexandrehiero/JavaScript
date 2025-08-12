@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Estado</title>
+</head>
+<body>
+    <h1>
+        Validando Nacionalidade
+    </h1>
+
+    <label for="nacionali">Digite o país que você nasceu: </label>
+    <input type="text" name="nac" id="naci">
+
+    <input type="button" value="Verificar" onclick="validar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function validar() {
+            var nacionalidade = window.document.getElementById('naci')
+            var nacionalidade = String(nacionalidade.value)
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `<p>Você digitou o país ${nacionalidade}</p>` 
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro!!`
+            } else {
+                res.innerHTML += `Você é Estrangeiro!`
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>
