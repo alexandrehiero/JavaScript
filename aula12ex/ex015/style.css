@@ -33,9 +33,14 @@ section > div {
 }
 
 
-section > div#foto > img {
-    width: 250px;
-    height: 250px;
+section > div#res {
+    text-align: center;
+}
+
+section > div#res > img {
+    /*display: none;*/    
+    width: 150px;
+    height: 150px;
 
     border-radius: 50%;
 }
