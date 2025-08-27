@@ -20,16 +20,17 @@ header > h1 {
 section {
     background-color: white;
     width: 80vw;
-    height: 400px;
+    height: 160px;
 
     margin: auto;
     border-radius: 20px;
+    padding: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.337);
 }
 
-section > div {
+section > form#texto {
     text-align: left;
-    padding: 20px;
+    padding: 5px;
 }
 
 
@@ -37,8 +38,8 @@ section > div#res {
     text-align: center;
 }
 
-section > div#res > img {
-    /*display: none;*/    
+section > div#res > img#foto {  
+    display: none;
     width: 150px;
     height: 150px;
 

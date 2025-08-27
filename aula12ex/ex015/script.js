@@ -1,26 +1,31 @@
 function calcular() {
     var agora = new Date()
     var anoatual = agora.getFullYear()
-
     var anodigitado = window.document.getElementById('anoi')
     var anodigitado = Number(anodigitado.value)
     var idade = anoatual - anodigitado
+
+    var res = window.document.getElementById('texto')
+    res.innerHTML = `Você tem ${idade} anos.`
+
+    var tamanhodadiv = window.document.getElementById('tamanhodadiv')
+    tamanhodadiv.style.height = '350px'
+
+
+    var foto = window.document.getElementById('foto')
     
-    var sexo = window.document.getElementsByName('sexo')[0]
+    if (idade < 18 && idade > 0) {
+        foto.src = 'imagens/homem_adolescente.jpg' 
 
-    res.innerHTML = `Sua idade é de ${idade} anos.`
-
-
-    if (idade < 18) { 
-        img.src = 'imagens/homem_adolescente.jpg' 
     } else if (idade <= 59) {
-        img.src = 'imagens/homem_adulto.jpg'
+        foto.src = 'imagens/homem_adulto.jpg'
+
     } else if (idade >= 60 && idade <= 110) {
-        img.src = 'imagens/homem_senhor.jpg'
+        foto.src = 'imagens/homem_senhor.jpg'
+
     } else {
         res.innerHTML = `Sua idade é inválida!`
     }
-
 
 }
 

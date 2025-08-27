@@ -7,6 +7,7 @@ function carregar() {
 
     texto.innerHTML = `<p>Agora são ${horas} horas.</p>`
 
+
     if (horas < 12) {
         window.document.body.style.backgroundColor = 'gold'
         img.src = 'imagens/maanha.jpg'
