@@ -14,27 +14,29 @@
     </header>
 
     <section id="tamanhodadiv">
-        <form id="texto">
-            <label for="anoi">Ano de Nascimento: </label>
-            <input type="number" name="ano" id="anoi" required>
+        <div id="texto">
+            <p>
+                <label for="anoi">Ano de Nascimento: </label>
+                <input type="number" name="ano" id="anoi" required>
+            </p>
 
-            <p> 
-            Sexo:
-            <input type="radio" name="sexo" id="sexoM" value="M" required>
+            <p>Sexo:
+            <input type="radio" name="sexo" id="sexoM" checked>
             <label for="sexoM">Masculino</label>
 
-            <input type="radio" name="sexo" id="sexoF" value="F" required>
-            <label for="sexoF">Feminino </label>
+            <input type="radio" name="sexo" id="sexoF">
+            <label for="sexoF">Feminino</label>
             </p>
 
-            <input type="submit" value="Verificar" onsubmit="calcular()">
-        </form>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
 
         <div id="res">
-            <p id="texto">
+            <p>
                 Preencha os dados acima para ver o resultado!
             </p>
-            <img src="imagens/homem_senhor.jpg" alt="Imagem da pessoa" id="foto">
         </div>
     </section>
 
