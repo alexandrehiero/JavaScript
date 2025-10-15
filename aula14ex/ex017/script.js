@@ -13,7 +13,7 @@ function gerar() {
         while (c <= 10) {
             var item = document.createElement('option')
             item.text = `${num} x ${c} = ${c * num}`
-            item.value = `tab${c}`
+            item.value = `${c}`
             
             res.appendChild(item)
             c++
